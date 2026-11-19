@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F6F3EA;
+    color: #1A1D18;
+    background-image:
+      radial-gradient(rgba(27, 67, 50, 0.04) 1px, transparent 0),
+      linear-gradient(to bottom, rgba(197, 155, 56, 0.03), transparent 320px);
+    background-size: 28px 28px, 100% 100%;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle topographic parchment pattern for cards and headers */
+.hyrule-parchment-grid {
+  background-image:
+    linear-gradient(to right, rgba(145, 128, 86, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(145, 128, 86, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

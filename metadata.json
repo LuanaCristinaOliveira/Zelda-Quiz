@@ -1,0 +1,6 @@
+{
+  "name": "Zelda Gamer Profile",
+  "description": "Quiz interativo e painel de perfil gamer para acompanhar sua jornada pela franquia The Legend of Zelda e descobrir seu Zelda Score.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
